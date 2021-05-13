@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>店舗一覧</title>
+  <style>
+
+  html {
+    background-color: white;
+  }
+
+  body {
+    font-family: "Meiryo UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN","Yu Gothic UI", "MS PGothic", sans-serif;
+    text-align: center;
+  }
+
+  button {
+    width: 20%;
+    height: auto;
+    display: inline-block;
+    padding: 3vh 1vw;
+    text-decoration: none;
+    font-size: 2vw;
+    color: #black;
+    border-bottom: solid 4px #696969;
+    border-radius: 3px;
+    margin: 2%;
+  }
+
+  button:active {
+    -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+  }
+
+  embed {
+    width: 95%;
+    height: 700px;
+    margin-bottom: 5%;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 3vw;
+  }
+
+  div {
+    margin: 3% 0;
+  }
+
+  </style>
+
+  <body>
+    <h1>主な店舗一覧</h1>
+
+      <button type="button" style="background-color:#ffe5e5" onclick="window.open('food.pdf','_blank')">飲食店</button>
+      <button type="button" style="background-color:#e5e5ff" onclick="window.open('souvenir.pdf','_blank')">お土産</button>
+      <button type="button" style="background-color:#ffffe5" onclick="window.open('morning.pdf','_blank')">早朝</button><br>
+
+      <div class="text">
+        <a>最新の営業時間は </a><a href="https://tokyo-haneda.com/site_resource/whats_new/pdf/000007750.pdf">こちら</a>
+      </div>
+
+      <embed src="shop.pdf" type="application/pdf">
+
+  </body>
+  </html>
