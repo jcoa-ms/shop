@@ -43,10 +43,16 @@
 
   h1 {
     font-size: 3vw;
+    margin-bottom: 5%;
   }
 
   div {
     margin: 3% 0;
+  }
+
+  img {
+    width: 90%;
+    margin
   }
 
   </style>
@@ -54,15 +60,15 @@
   <body>
     <h1>主な店舗一覧</h1>
 
-      <button type="button" style="background-color:#ffe5e5" onclick="window.open('food.pdf','_blank')">飲食店</button>
-      <button type="button" style="background-color:#e5e5ff" onclick="window.open('souvenir.pdf','_blank')">お土産</button>
-      <button type="button" style="background-color:#ffffe5" onclick="window.open('morning.pdf','_blank')">早朝</button><br>
+      <button type="button" style="background-color:#e5ffe5" onclick="location.href='shop.pdf'">まとめ</button><br>
+
+      <button type="button" style="background-color:#ffe5e5" onclick="location.href='food.pdf'">飲食店</button><br>
+      <button type="button" style="background-color:#e5e5ff" onclick="location.href='souvenir.pdf'">お土産</button><br>
+      <button type="button" style="background-color:#ffffe5" onclick="location.href='morning.pdf'">早朝</button><br>
 
       <div class="text">
         <a>最新の営業時間は </a><a href="https://tokyo-haneda.com/site_resource/whats_new/pdf/000007750.pdf">こちら</a>
       </div>
-
-      <embed src="shop.pdf" type="application/pdf">
 
   </body>
   </html>
